@@ -2,6 +2,8 @@ body, html {
     margin: 0;
     padding: 0;
     width: 100%;
+    display: grid;
+    grid-template-columns: minmax(100px, 1fr);
 }
 
 .main-pic {
@@ -54,6 +56,9 @@ nav li {
 }
 .logo-title {
     margin-left: 5px;
+}
+.title {
+    letter-spacing: .2em;
 }
 .title-bottom {
     font-size: 14px;
