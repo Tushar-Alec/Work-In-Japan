@@ -58,11 +58,10 @@ nav li {
     margin-left: 5px;
 }
 .title {
-    letter-spacing: .2em;
+    letter-spacing: .1em;
 }
 .title-bottom {
     font-size: 14px;
-    margin-left: 10px;
     display: flex;
     justify-content: center;
 }
@@ -127,7 +126,7 @@ a {
     display: inline-block; 
     padding: 15px 30px;
     background-color: #FFFFFF; 
-    color: tomato; 
+    color:  #F75534; 
     border: none; 
     border-radius: 5px; 
     margin-top: 20px;
@@ -137,8 +136,82 @@ a {
     cursor: pointer;
 }
 .cta-button:hover {
-    background-color: tomato;
+    background-color: #F75534;
     color: white;
 }
 
+.job-listing-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
 
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.logo svg {
+    height: 50px;
+    width: 50px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.job-listing-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    border: 1px solid silver;
+    padding: 12px;
+    border-radius: 40px;
+    width: 750px;
+
+}
+
+.search-container input, .search-container select, .search-container button {
+    outline: none;
+    margin-right: 10px;
+    padding: 10px;
+    font-size: 16px;
+}
+.search-container input, .search-container select {
+    width: 200px;
+    background-color: white;
+    border: none;
+}
+.search-container input {
+    border-right: 1px solid silver;
+}
+.search-container button {
+    cursor: pointer;
+    color: white;
+    background-color: #F75534;
+    padding: 12px;
+    border-radius: 25px;
+    width: 130px;
+}
