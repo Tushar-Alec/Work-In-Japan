@@ -2,8 +2,7 @@ body, html {
     margin: 0;
     padding: 0;
     width: 100%;
-    display: grid;
-    grid-template-columns: minmax(100px, 1fr);
+    background-color: #F8F9FA;
 }
 
 .main-pic {
@@ -187,7 +186,8 @@ nav ul li a {
     align-items: center;
     margin: 20px;
     border: 1px solid silver;
-    padding: 12px;
+    background-color: white;
+    padding: 10px;
     border-radius: 40px;
     width: 750px;
 
@@ -204,14 +204,148 @@ nav ul li a {
     background-color: white;
     border: none;
 }
-.search-container input {
+#jobTitle, #location {
     border-right: 1px solid silver;
 }
 .search-container button {
+    font-size: 16px;
+    border: none;
     cursor: pointer;
     color: white;
     background-color: #F75534;
-    padding: 12px;
+    padding: 14px;
     border-radius: 25px;
     width: 130px;
+    margin: 0;
+    
+}
+
+.job-card {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.job-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    border-radius: 40px;
+}
+
+.company {
+    font-size: 1.2em;
+    color: #666;
+}
+
+.location {
+    margin-top: 10px;
+    color: #555;
+}
+
+.salary {
+    margin-top: 10px;
+    color: green;
+}
+
+.job-type {
+    margin-top: 10px;
+    font-style: italic;
+    color: #777;
+}
+.apply-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;  
+}
+
+.apply-button:hover {
+    background-color: #0056b3;
+}
+
+#job-container {
+   display: grid;
+   grid-template-columns: repeat(3, minmax(200px, 1fr));
+   justify-content: center;
+   align-items: start;
+   gap: 30px;
+   margin: auto;
+}
+
+footer {
+    height: 60vh;
+    background-color: var(--yellow-color);
+    color: var(--white-color);
+  }
+  .footer {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+  }
+  .connect-us svg {
+     width: 34px;
+     margin: 2px;
+     margin-left: 30px;
+     fill: white;
+  }
+  .connect-us svg:hover {
+    transform: scale(1.4);
+  }
+
+  footer h5 {
+    font-size: 35px;
+    margin: 30px;
+    display: flex;
+  }
+
+  .aboutus, .services, .connect-us {
+    text-align: left;
+    font-size: 18px;
+  }
+  .services ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    list-style-type: none;
+  }
+  .services li {
+    margin-top: 12px;
+    cursor: pointer;
+  }
+  .services li:hover {
+    text-decoration: underline 1.5px solid #fff;
+  }
+  .aboutus {
+    width: 400px;
+  }
+  #Abouth5 {
+    margin-left: -5px;
+  }
+#footer-line {
+  font-size: 24px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  text-align: center;
+  margin-top: 130px;
+}
+#fb{
+  fill: blue;
+}
+#insta{
+  fill:  #e4405f;
+}
+#tweet{
+  fill: royalblue;
+}
+#twitch {
+   fill: purple;
 }
