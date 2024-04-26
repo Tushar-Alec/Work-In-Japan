@@ -2,7 +2,7 @@ body, html {
     margin: 0;
     padding: 0;
     width: 100%;
-    background-color: #F8F9FA;
+    background-color: #C7CDCB;
 }
 
 .main-pic {
@@ -187,9 +187,9 @@ nav ul li a {
     margin: 20px;
     border: 1px solid silver;
     background-color: white;
-    padding: 10px;
+    padding: px;
     border-radius: 40px;
-    width: 750px;
+    width: 800px;
 
 }
 
@@ -208,6 +208,7 @@ nav ul li a {
     border-right: 1px solid silver;
 }
 .search-container button {
+    margin-right: -20px;
     font-size: 16px;
     border: none;
     cursor: pointer;
@@ -215,8 +216,8 @@ nav ul li a {
     background-color: #F75534;
     padding: 14px;
     border-radius: 25px;
-    width: 130px;
-    margin: 0;
+    width: 150px;
+   
     
 }
 
