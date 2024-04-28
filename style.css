@@ -2,7 +2,7 @@ body, html {
     margin: 0;
     padding: 0;
     width: 100%;
-    background-color: #C7CDCB;
+    background-color: white;
 }
 
 .main-pic {
@@ -278,4 +278,71 @@ nav ul li a {
    align-items: start;
    gap: 30px;
    margin: auto;
+}
+.info {
+    display: flex;
+    background-color: #86BFC0;
+    padding: 20px 0;
+  }
+
+  .about-us {
+    border: 1px solid black;
+    width: 40%;
+  }
+  .about-us-title {
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin: 20px;
+  }
+
+  .about-us-content {
+    font-size: 24px;
+    margin: 25px;
+  }
+  footer {
+    background-color: white;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    color: black;
+  }
+  
+  .footer-logo {
+    cursor: pointer;
+    color: #18272F;
+    align-items: center;
+    display: flex;
+    font-size: 30px;
+    font-weight: 800;
+    margin-left: 150px;
+}
+.footer-logo svg {
+    width: 55px;
+    height: 53px;
+}
+.address {
+    display: flex;
+    width: 200px;
+    margin: 30px;
+    padding: 20px;
+}
+.services-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 18px;
+}
+.services-1 a, .services-2 a {
+    margin: 6px;
+}
+.services-2 {
+    display: flex;
+    margin: 80px;
+    font-size: 18px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
