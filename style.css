@@ -64,13 +64,13 @@ nav li {
     display: flex;
     justify-content: center;
 }
-a {
+nav a {
     position: relative;
     color: #18272F;
     text-decoration: none;
   }
   
-  a::before {
+  nav a::before {
       content: '';
       position: absolute;
       width: 100%;
@@ -84,11 +84,11 @@ a {
       transition: transform .3s ease-in-out;
     }
   
-  a:hover::before {
+  nav a:hover::before {
     transform-origin: left;
     transform: scaleX(1);
   }
-  a:hover {
+  nav a:hover {
     color: white;
   }
   
@@ -221,7 +221,7 @@ nav ul li a {
     
 }
 
-.job-card {
+.job-item {
     background-color: white;
     border: 1px solid #ccc;
     border-radius: 8px;
@@ -271,7 +271,7 @@ nav ul li a {
     background-color: #0056b3;
 }
 
-#job-container {
+#job-list {
    display: grid;
    grid-template-columns: repeat(3, minmax(200px, 1fr));
    justify-content: center;
@@ -282,11 +282,10 @@ nav ul li a {
 .info {
     display: flex;
     background-color: #86BFC0;
-    padding: 20px 0;
+    padding: 50px 0;
   }
 
   .about-us {
-    border: 1px solid black;
     width: 40%;
   }
   .about-us-title {
@@ -302,7 +301,7 @@ nav ul li a {
     margin: 25px;
   }
   footer {
-    background-color: white;
+    background-color: #86BFC0;
     color: #fff;
     padding: 20px 0;
     text-align: center;
@@ -336,7 +335,15 @@ nav ul li a {
     font-size: 18px;
 }
 .services-1 a, .services-2 a {
-    margin: 6px;
+    margin: 8px;
+    font-size: 20px;
+    color: black;
+}
+.services a {
+    text-decoration: none;
+}
+.services a:hover {
+    transform: scale(1.1);
 }
 .services-2 {
     display: flex;
@@ -346,3 +353,77 @@ nav ul li a {
     justify-content: center;
     flex-direction: column;
 }
+.services {
+    display: flex;
+    height: 220px;
+    margin-left: 100px;
+    margin-top: 40px;
+}
+.services h5 {
+    font-size: 32px;
+}
+.contact-us {
+    padding: 100px;
+}
+
+.send-mail {
+    background-color: #DEF2FE;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border: 2px solid silver;
+  }
+  
+  .send-mail h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+  
+  .send-mail h4 {
+    font-size: 20px;
+    color: #6c757d;
+    margin-bottom: 20px;
+  }
+  
+  .send-mail input[type="email"] {
+    width: 30%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    outline: none;
+  }
+  .send-mail button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .send-mail button:hover {
+    background-color: #0056b3;
+  }
+  .connect-us svg {
+    width: 40px;
+    margin: 10px;
+    margin-left: 25px;
+ }
+ .connect-us svg:hover {
+   transform: scale(1.4);
+ }
+ #fb{
+    fill: blue;
+  }
+  #insta{
+    fill:  #e4405f;
+  }
+  #tweet{
+    fill: royalblue;
+  }
+  #twitch {
+     fill: purple;
+  }
