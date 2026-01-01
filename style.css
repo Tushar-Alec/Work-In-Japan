@@ -47,6 +47,9 @@ nav li {
     font-weight: 800;
     margin: 12px;
     padding: 8px;
+    
+}
+.logo:hover {
     border: 1px solid black;
 }
 .logo svg {
