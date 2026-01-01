@@ -431,5 +431,115 @@ nav ul li a {
      fill: purple;
   }
 
+@media (max-width: 768px) {
+
+  nav {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  nav li {
+    margin: 10px 0;
+  }
+
+  
+  .tagline-container {
+    position: static;
+    width: 90%;
+    height: auto;
+    margin: 20px auto;
+    text-align: center;
+  }
+
+  .tagline {
+    font-size: 24px;
+  }
+
+  .subtext {
+    font-size: 16px;
+  }
+
+  
+  .search-container {
+    flex-direction: column;
+    width: 90%;
+    padding: 15px;
+    border-radius: 20px;
+  }
+
+  .search-container input,
+  .search-container select,
+  .search-container button {
+    width: 100%;
+    margin: 8px 0;
+  }
+
+  .search-container button {
+    margin-right: 0;
+  }
+
+ 
+  #job-list {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  
+  .info {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-us {
+    width: 90%;
+    text-align: center;
+  }
+
+  .about-us-content {
+    font-size: 18px;
+  }
+
+  
+  .services {
+    flex-direction: column;
+    margin-left: 0;
+    height: auto;
+  }
+
+  .services-2 {
+    margin: 20px 0;
+  }
+
+  .footer-logo {
+    margin-left: 0;
+    justify-content: center;
+  }
+
+  
+  .contact-us {
+    padding: 30px;
+  }
+
+  .send-mail input[type="email"] {
+    width: 90%;
+  }
+}
+
+@media (max-width: 1024px) {
+  #job-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .search-container {
+    width: 90%;
+  }
+}
+
 
   
